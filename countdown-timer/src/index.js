@@ -5,5 +5,5 @@ import './index.css';
 
 ReactDOM.render(
   <App />,
-  document.getElementById('root')
+  document.getElementById('wc17-demo__countdown-timer')
 );
