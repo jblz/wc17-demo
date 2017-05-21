@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 // @TODO import PropTypes from 'react-proptypes' b/c React.PropTypes is deprecated;
 
+import image from './godh.gif'
+
 function getTimestamp( dateArg ) {
 	const date = typeof dateArg !== 'undefined' ? new Date( dateArg ) : new Date();
 	return date.getTime();
@@ -36,6 +38,9 @@ class CountdownTimer extends Component {
 
 	render() {
 		const remainingSeconds = ( this.expirationTimestamp - this.state.timestamp ) / 1000;
+		if ( remainingSeconds < 0 ) {
+			return <img src={ image } alt="Game over, man. Game over!" />;
+		}
 		return (
 			<div>
 				<h2>Countdown Timer!</h2>
@@ -47,9 +52,9 @@ class CountdownTimer extends Component {
 					( Timestamp: { this.expirationTimestamp } )
 				</p>
 				<div>
-					That means I only have { Math.floor( remainingSeconds ) } seconds left!!!!!1111<br />
+					That means I only have { Math.max( 0, Math.floor( remainingSeconds ) ) } seconds left!!!!!1111<br />
 					Seems like a long time when I put it that way.<br />
-					{ ( remainingSeconds / 60 ).toFixed( 2 ) } minutes will go quickly!
+					{ Math.max( 0, ( remainingSeconds / 60 ).toFixed( 2 ) ) } minutes will go quickly!
 					<hr />
 					Come to think of it, that's only:
 					<ul>
