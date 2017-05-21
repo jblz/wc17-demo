@@ -39,6 +39,7 @@ class LetsRest extends Component {
 			? <StoryList />
 			: <MediaList />;
 
+		console.log( 'Rendering!', { mode, storyMode } );
 		return (
 			<div className={ 'lets-rest-' + mode }>
 				<button onClick={ this.toggleFeature }>Click me!</button>

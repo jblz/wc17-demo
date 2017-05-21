@@ -18,7 +18,6 @@ class Fetcher extends Component {
 
 	componentWillMount() {
 		this.fetchData();
-		console.log('props? ', this.props);
 		this.fetchDataInterval = setInterval( this.fetchData, this.props.intervalMs );
 	}
 
