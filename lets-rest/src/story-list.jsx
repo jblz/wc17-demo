@@ -1,6 +1,4 @@
-/**
- * External dependencies
- */
+// React has to be in scope to use JSX
 import React from 'react';
 
 function StoryList( props ) {
