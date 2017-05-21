@@ -4,6 +4,6 @@ import App from './App';
 import './index.css';
 
 ReactDOM.render(
-  <App mode="media"/>,
-  document.getElementById('root')
+  <App />,
+  document.getElementById('wc17-demo__lets-rest')
 );

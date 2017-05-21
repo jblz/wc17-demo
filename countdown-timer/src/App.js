@@ -26,7 +26,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-		<CountdownTimer expiration="2017-05-20">
+		<CountdownTimer expiration="2017-05-21 15:45 UTC">
 			Some child text which must explicitly be handled in the component
 		</CountdownTimer>
       </div>

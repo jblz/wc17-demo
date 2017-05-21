@@ -53,8 +53,8 @@ class CountdownTimer extends Component {
 					<hr />
 					Come to think of it, that's only:
 					<ul>
-						<li>{ ( remainingSeconds / 3600 ).toFixed( 2 ) } hours</li>
-						<li>{ ( remainingSeconds / 86400 ).toFixed( 2 ) } days</li>
+						<li>{ Math.max( 0, ( remainingSeconds / 3600 ).toFixed( 2 ) ) } hours</li>
+						<li>{ Math.max( 0, ( remainingSeconds / 86400 ).toFixed( 2 ) ) } days</li>
 					</ul>
 				</div>
 				🙀
