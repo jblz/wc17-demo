@@ -51,7 +51,9 @@ class CountdownTimer extends Component {
 					( Timestamp: { this.expirationTimestamp } )
 				</p>
 				<div>
-					That means I only have { Math.max( 0, Math.floor( remainingSeconds ) ) } seconds left!!!!!1111<br />
+					That means I only have:<br />
+					{ Math.max( 0, Math.floor( remainingSeconds ) ) } seconds left!!!!!1111<br />
+					<p style={ { fontSize: 24 } }>🤔🤔🤔</p>
 					Seems like a long time when I put it that way.<br />
 					{ Math.max( 0, ( remainingSeconds / 60 ).toFixed( 2 ) ) } minutes will go quickly!
 					<hr />
@@ -61,7 +63,7 @@ class CountdownTimer extends Component {
 						<li>{ Math.max( 0, ( remainingSeconds / 86400 ).toFixed( 2 ) ) } days</li>
 					</ul>
 				</div>
-				🙀
+				<p style={ { fontSize: 48 } }>🙀</p>
 			</div>
 		);
 	}
