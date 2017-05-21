@@ -6,7 +6,7 @@
  */
 
 class WC2017_Jblz {
-	const VERSION = '0.111111a';
+	const VERSION = '0.1a';
 
 	static function init() {
 		if ( is_admin() ) {
