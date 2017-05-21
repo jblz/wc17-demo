@@ -10,7 +10,7 @@ class WC2017_Jblz {
 
 	static function init() {
 		if ( is_admin() ) {
-			// @TODO register endpoints, etc.
+			// @TODO register "write" endpoints, etc.
 			return;
 		}
 
