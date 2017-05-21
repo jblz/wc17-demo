@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// @TODO import PropTypes from 'react-proptypes' b/c React.PropTypes is deprecated;
+import PropTypes from 'prop-types';
 
 import image from './godh.gif'
 
@@ -10,8 +10,7 @@ function getTimestamp( dateArg ) {
 
 class CountdownTimer extends Component {
 	static propTypes = {
-		// oneOf string or number
-		expiration: React.PropTypes.string.isRequired,
+		expiration: PropTypes.string.isRequired,
 	};
 
 	state = {
