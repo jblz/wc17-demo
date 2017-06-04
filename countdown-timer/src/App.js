@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import CountdownTimer from './countdown-timer';
 
-const TIMER_EXPIRATION = '2017-06-04 18:45 UTC';
+// Safari doesn't support dates like '2017-06-04' 😤
+const TIMER_EXPIRATION = '2017/06/04 18:45 UTC';
 
 class App extends Component {
   render() {
