@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import CountdownTimer from './countdown-timer';
 
-const TIMER_EXPIRATION = '2017-05-21 15:45 UTC';
+const TIMER_EXPIRATION = '2017-06-04 18:45 UTC';
 
 class App extends Component {
   render() {
